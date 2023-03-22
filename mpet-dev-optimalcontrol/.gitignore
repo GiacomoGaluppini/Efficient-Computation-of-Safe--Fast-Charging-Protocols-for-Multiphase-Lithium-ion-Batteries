@@ -1,0 +1,46 @@
+# Vim files
+*.swp
+
+# Outputs users may generate
+*.m4v
+*.mp4
+*.avi
+*.png
+*.pdf
+
+# Python bytecode files
+*.pyc
+
+# Generally ignore config files
+*.cfg
+# Except those in the configs directory
+!configs/*.cfg
+
+# Ignore general simulation output stuff
+history/
+sim_output*
+
+#Ignore test outputs but not ref_outputs
+!tests/ref_outputs/*/*.cfg
+!tests/ref_outputs/*/output_data
+!tests/ref_outputs/*/sim_output
+tests/test_outputs/
+
+# Ignore scripts copied from mpet/bin/ to mpet/
+/mpetplot.py
+/mpetrun.py
+/mpettest.py
+
+# Misc
+mpetLogTimeSpace.py
+mpetMaterialsMHC.py
+venv/
+.remarkrc
+.vim
+.idea
+*.egg-info
+.vscode
+
+# documentation
+docs/_build
+docs/apidocs
